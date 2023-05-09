@@ -1,1 +1,5 @@
-/myenv
+# Virtual environment
+myenv/
+
+# Test
+code/__pycache__/
