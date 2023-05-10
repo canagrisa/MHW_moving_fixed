@@ -3,3 +3,6 @@ myenv/
 
 # Test
 code/__pycache__/
+
+
+.git
