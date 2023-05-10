@@ -154,8 +154,9 @@ def plot_horizontal_histogram(
         color=color,
     )
 
-    values = [hist[i] * bin_edges[i] for i in range(len(hist))]
-    mean = sum(values) / (sum(hist))
+    # values = [hist[i] * bin_edges[i] for i in range(len(hist))]
+    # mean = sum(values) / (sum(hist))
+    mean = plot_mean
 
     cumulative_freq = np.cumsum(hist)
     index = np.argmax(cumulative_freq >= 0.5 * np.sum(hist))
@@ -212,6 +213,10 @@ def mhw_metrics(
     }
 
     metrics = ["MHW", "mean_duration", "mean_anomaly", "cumulative_anomaly"]
+
+
+    means = [np.float32(time_series[metric].mean()) for metric in metrics]
+
     hist_metrics = [
         "MHW_days_year",
         "MHW_event_duration",
@@ -297,7 +302,7 @@ def mhw_metrics(
                     fs,
                     color=colors[i],
                     plot_median=True,
-                    plot_mean=True,
+                    plot_mean=means[i],
                     units=units[i],
                 )
 
