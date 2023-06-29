@@ -11,7 +11,7 @@ This repository provides all the code required for data downloading, preprocessi
 
 # Description of the Repository
 
-This repository provides the code and resources needed to reproduce the results, figures, and tables in Rosselló et al. (2023). The repository is organized into the following folders and files:
+This repository provides the code and resources needed to reproduce the results, figures, and tables in [Rosselló et al. (2023)](https://www.frontiersin.org/articles/10.3389/fmars.2023.1168368/full?&utm_source=Email_to_authors_&utm_medium=Email&utm_content=T1_11.5e1_author&utm_campaign=Email_publication&field=&journalName=Frontiers_in_Marine_Science&id=1168368). The repository is organized into the following folders and files:
 
 - `code/`
     - `data_retrieve/`: Code to download raw data for the study.
